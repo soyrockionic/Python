@@ -1,11 +1,11 @@
 ﻿import random
-numero_aleatorio = random.randrange(100)
+numero_aleatorio = random.randrange(101)
 gane = False
 print("Tenés 5 intentos para adivinar un entre 1 y 100")
 intento = 1
 while intento <= 5 and not gane:
-    numeroIngresado = int(input('Ingresa tu número: '))
-    if numeroIngresado == numero_aleatorio:
+    numero_ingresado = int(input('Ingresa tu número: '))
+    if numero_ingresado == numero_aleatorio:
         print('Ganaste! y necesitaste {} intentos!!!'.format(intento))
         gane = True
     else:
