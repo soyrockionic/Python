@@ -1,14 +1,14 @@
-archNombres = open("nombres.txt", "r", encoding="utf-8")
-archEval1 = open("eval1.txt", "r", encoding="utf-8")
-archEval2 = open("eval2.txt", "r", encoding="utf-8")
+arch_nombres = open("nombres.txt", "r", encoding="utf-8")
+arch_eval1 = open("eval1.txt", "r", encoding="utf-8")
+arch_eval2 = open("eval2.txt", "r", encoding="utf-8")
 
-nombres = archNombres.read().split()
-eval1 = archEval1.read().split(",")
-eval2 = archEval2.read().split(",")
+nombres = arch_nombres.read().split()
+eval1 = arch_eval1.read().split(",")
+eval2 = arch_eval2.read().split(",")
 
-archNombres.close()
-archEval1.close()
-archEval2.close()
+arch_nombres.close()
+arch_eval1.close()
+arch_eval2.close()
 
 alumnos = []
 suma = 0
